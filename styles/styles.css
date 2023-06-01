@@ -608,8 +608,8 @@ header .heroImageContainer img {
   margin: 0 auto;
   width: 350px;
   height: 350px;
-  -webkit-box-shadow: 12px 0 #ff9a63, 24px 0 #f9ae86, 36px 0 #f4c0a4;
-  box-shadow: 12px 0 #ff9a63, 24px 0 #f9ae86, 36px 0 #f4c0a4;
+  /* -webkit-box-shadow: 12px 0 #ff9a63, 24px 0 #f9ae86, 36px 0 #f4c0a4;
+  box-shadow: 12px 0 #ff9a63, 24px 0 #f9ae86, 36px 0 #f4c0a4; */
   transition: all ease-in 0.3s;
   animation: fadeInAnimation;
   animation-duration: 1.5s;
@@ -621,8 +621,8 @@ header .heroImageContainer img {
 
 header .heroImageContainer img:hover{
   transform: translate(18px,0px);
-  -webkit-box-shadow: 0 0 #fb935b, 0px 0 #f9ae86, 0 0 #f4c0a4;;
-  box-shadow: 0 0 #fb935b, 0px 0 #f9ae86, 0 0 #f4c0a4;
+  /* -webkit-box-shadow: 0 0 #fb935b, 0px 0 #f9ae86, 0 0 #f4c0a4;;
+  box-shadow: 0 0 #fb935b, 0px 0 #f9ae86, 0 0 #f4c0a4; */
   transition: all ease-in 0.3s;
 }
 
@@ -757,12 +757,27 @@ header .heroDescription .socialsResume .resumeLink:focus {
   display: inline-block;
 }
 
+.socialsList li a.leetcode {
+  padding: 9px 10px;
+  background-color: white;
+  /* background: url('https://api.iconify.design/simple-icons/leetcode.svg') no-repeat center center / contain; */
+  content: url('https://api.iconify.design/simple-icons/leetcode.svg?height=20&width=20');
+}
+
 
 .socialsList li a:hover {
   background-color: #1d083a;
   color: #eee;
   border: 1px solid #1d083a;
   animation: bounce 1s ease-in both;
+}
+
+.socialsList li a.leetcode:hover {
+  background-color: #1d083a;
+  color: #eee;
+  border: 1px solid #1d083a;
+  animation: bounce 1s ease-in both;
+  content: url('https://api.iconify.design/simple-icons/leetcode.svg?color=white&height=20&width=20');
 }
 
 @keyframes bounce { 
@@ -1001,12 +1016,12 @@ header .heroDescription .socialsResume .resumeLink:focus {
   background-color: #bcd0ed;
 }
 
-.contactTypes .flexContainer .typeBox .lni-whatsapp {
+.contactTypes .flexContainer .typeBox .lni-twitter {
   color: #095e17;
   background-color: #9fe3ad;
 }
 
-.contactTypes .flexContainer .typeBox .lni-whatsapp:hover {
+.contactTypes .flexContainer .typeBox .lni-twitter:hover {
   transform: translate(0px,3px);
   transition: all 0.3s ease-in;
   background-color: #5ac870;
