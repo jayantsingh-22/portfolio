@@ -1,533 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <title>Jayant's Portfolio</title>
+    <meta
+      name="description"
+      content="A Web Developer passionate about creating interactive applications and experiences on the web."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/apple-touch-icon.png" type="image/x-icon" />
-  <title>Jayant's Portfolio</title>
-  <meta name="description"
-    content="A Web Developer passionate about creating interactive applications and experiences on the web." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/styles.css" />
-</head>
-
-<body>
-  <!-- Mobile menu button -->
-  <div id="home" class="visuallyHidden"></div>
-  <div class="menuButton" id="menuButton" tabindex="0">
-    <div class="linesContainer">
-      <span></span>
+  <body>
+    <!-- Mobile menu button -->
+    <div id="home" class="visuallyHidden"></div>
+    <div class="menuButton" id="menuButton" tabindex="0">
+      <div class="linesContainer">
+        <span></span>
+      </div>
     </div>
-  </div>
 
-  <!-- Side menu -->
-  <aside class="sideMenu sideMenuShow" id="sideMenu">
-    <p class="logo">JS</p>
+    <!-- Side menu -->
+    <aside class="sideMenu sideMenuShow" id="sideMenu">
+      <p class="logo">JS</p>
 
-    <nav>
-      <ul class="navBar">
-        <li class="homeNav">
-          <a href="#home" class="navItem">
-            <i class="lni lni-home"></i>
-            <span class="navItemName">HOME</span>
-          </a>
-        </li>
+      <nav>
+        <ul class="navBar">
+          <li class="homeNav">
+            <a href="#home" class="navItem">
+              <i class="lni lni-home"></i>
+              <span class="navItemName">HOME</span>
+            </a>
+          </li>
 
-        <li class="aboutNav">
-          <a href="#about" class="navItem">
-            <i class="lni lni-user"></i>
-            <span class="navItemName">ABOUT</span>
-          </a>
-        </li>
+          <li class="aboutNav">
+            <a href="#about" class="navItem">
+              <i class="lni lni-user"></i>
+              <span class="navItemName">ABOUT</span>
+            </a>
+          </li>
 
-        <li class="skillsNav">
-          <a href="#skills" class="navItem">
-            <i class="lni lni-code-alt"></i>
-            <span class="navItemName">SKILLS</span>
-          </a>
-        </li>
+          <li class="skillsNav">
+            <a href="#skills" class="navItem">
+              <i class="lni lni-code-alt"></i>
+              <span class="navItemName">SKILLS</span>
+            </a>
+          </li>
 
-        <li class="worksNav">
-          <a href="#works" class="navItem">
-            <i class="lni lni-briefcase"></i>
-            <span class="navItemName">WORKS</span>
-          </a>
-        </li>
+          <li class="worksNav">
+            <a href="#works" class="navItem">
+              <i class="lni lni-briefcase"></i>
+              <span class="navItemName">WORKS</span>
+            </a>
+          </li>
 
-        <li class="contactNav">
-          <a href="#contact" class="navItem">
-            <i class="lni lni-phone"></i>
-            <span class="navItemName">CONTACT</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <li class="contactNav">
+            <a href="#contact" class="navItem">
+              <i class="lni lni-phone"></i>
+              <span class="navItemName">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="scrollDown" id="scrollDown">
-      <i class="lni lni-arrow-down"></i>
-      <span class="navItemName scrollDownText">Scroll Down</span>
-    </div>
-  </aside>
+      <div class="scrollDown" id="scrollDown">
+        <i class="lni lni-arrow-down"></i>
+        <span class="navItemName scrollDownText">Scroll Down</span>
+      </div>
+    </aside>
 
-  <!--Beginning of the wrapper -->
-  <div class="outerWrapper">
-    <div class="innerWrapper">
-      <!-- Header -->
-      <header>
-        <div class="heroImageContainer">
-          <img src="./images/prof.jpeg" alt="A picture of Jayant Singh." />
-        </div>
-        <div class="heroDescription">
-          <p class="greeting">HI THERE! I'M</p>
-          <h1><span id="jayant">JAYANT</span> SINGH</h1>
-          <p class="smallBio">
-            A <span>Web Developer</span> passionate about creating interactive
-            applications and experiences on the web.
-          </p>
-          <div class="socialsResume">
-            <a class="resumeLink"
-              href="https://drive.google.com/file/d/1g8HWI8l1Y5LZVt-l6PP5zAEDeN3sSjbo/view?usp=sharing"
-              alt="Jayant Singh's resumé" target="_blank" rel="noopener noreferrer">Resumé</a>
-            <ul class="socialsList">
-              <li>
-                <a class="linkedin" href="https://www.linkedin.com/in/jayant-singh-5425a3232/" target="_blank"
-                  rel="noopener noreferrer"><i class="lni lni-linkedin-original"
-                    aria-label="Link to Jayant's LinkedIn page."></i></a>
-              </li>
-              <li>
-                <a class="github" href="https://github.com/jayantsingh-22" target="_blank" rel="noopener noreferrer"><i
-                    class="lni lni-github-original" aria-label="Link to Jayant's GitHub page."></i></a>
-              </li>
-              <li>
-                <a class="leetcode" href="https://leetcode.com/jayantsingh640/" target="_blank"
-                  rel="noopener noreferrer"><iconify-icon icon="simple-icons:leetcode"
-                    aria-label="Link to Jayant's Leetcode profile"></iconify-icon>
-                </a>
-              </li>
-            </ul>
+    <!--Beginning of the wrapper -->
+    <div class="outerWrapper">
+      <div class="innerWrapper">
+        <!-- Header -->
+        <header>
+          <div class="heroImageContainer">
+            <img src="./images/prof.jpeg" alt="A picture of Jayant Singh." />
           </div>
-        </div>
-      </header>
-      <!-- Beginning of Main -->
-      <main>
-        <!-- About Section -->
-        <section class="aboutSection" id="about">
-          <div class="sectionHead">
-            <span>SOME INFO</span>
-            <h2>ABOUT ME</h2>
-          </div>
-
-          <article class="aboutContainer sectionContainer">
-            <p>
-              I am a sophomore year engineering student at
-              <span>IIIT Bhopal</span>. I love to delve into the world of web
-              development. I find it really fascinating to create and design
-              websites and I have taught myself a variety of programming
-              languages such as HTML, CSS, and JavaScript, relevant libraries
-              and frameworks through online courses and creating projects
-              whenever possible.
+          <div class="heroDescription">
+            <p class="greeting">HI THERE! I'M</p>
+            <h1><span id="jayant">JAYANT</span> SINGH</h1>
+            <p class="smallBio">
+              A <span>Web Developer</span> passionate about creating interactive
+              applications and experiences on the web.
             </p>
-          </article>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skillsSection" id="skills">
-          <div class="sectionHead">
-            <span>CHECK OUT MY</span>
-            <h2>SKILLS</h2>
-          </div>
-
-          <div class="skillsContainer sectionContainer">
-            <ul class="skillsGrid">
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/html5.svg" />
-                  <p>HTML</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/css3.svg" />
-                  <p>CSS</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/javascript.svg" />
-                  <p>Javascript</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/reactjs.svg" />
-                  <p>React</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/nodejs.svg" alt="NodeJS logo" />
-                  <p>NodeJS</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/sass.svg" />
-                  <p>SASS</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/jquery.svg" />
-                  <p>JQuery</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/bootstrap.svg" />
-                  <p>Bootstrap</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/tailwind.svg" />
-                  <p>Tailwind</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/sql.svg" />
-                  <p>SQL</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/mysql.svg" />
-                  <p>MySQL</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/mongodb.svg" />
-                  <p>MongoDB</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/cpp.svg" />
-                  <p>C++</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/github.svg" />
-                  <p>GitHub</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/docker.svg" />
-                  <p>Docker</p>
-                </div>
-              </li>
-
-              <li class="skillsList">
-                <div class="itemContainer">
-                  <img src="assets/skills/nestjs.svg" />
-                  <p>NestJS</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Works Section -->
-        <section class="worksSection" id="works">
-          <div class="sectionHead">
-            <span>TAKE A LOOK AT MY</span>
-            <h2>PROJECTS</h2>
-          </div>
-
-          <div class="worksContainer sectionContainer">
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/statistica.png" alt="Statisitca" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>Statisitca</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">React.js</span>,
-                  <span class="techStack">SASS</span>,
-                  <span class="techStack">Bootstrap5</span>,
-                  <span class="techStack">D3.js</span>
-                </h4>
-                <ul>
-                  <li>
-                    A web app that provides graphical data on several economic
-                    indicators of different countries.
-                  </li>
-
-                  <li>
-                    It uses data fetched by the World Bank API to plot in the
-                    graphical form.
-                  </li>
-
-                  <li>
-                    Used D3.js library to plot the graph and Bootstrap5 to add
-                    responsiveness.
-                  </li>
-                </ul>
-                <div class="workLinks">
-                  <a href="https://statistica.imjay.xyz/" class="liveLink" target="_blank"
-                    rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/jayantsingh-22/statistica" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/natours.png" alt="Natours image" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>Natours</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">NodeJS</span>,
-                  <span class="techStack">ExpressJS</span>,
-                  <span class="techStack">MongoDB</span>,
-                  <span class="techStack">Mongoose</span>,
-                  <span class="techStack">Pug</span>
-                </h4>
-                <ul>
-                  <li>
-                    Natours is a dummy adventure travel web app, specializing in nature tours and experiences.
-                  </li>
-
-                  <li>
-                    Developed app with Pug and Mongoose integration, ensuring a good user experience and
-                    performance.
-                  </li>
-                </ul>
-                <div class="workLinks">
-                  <a href="https://natours.imjay.xyz/" class="liveLink" target="_blank"
-                    rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/jayantsingh-22/tours-project" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/weather.png" alt="In progress 🚧" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>Weather App</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">NodeJS</span>,
-                  <span class="techStack">ExpressJS</span>,
-                  <span class="techStack">OpenWeatherMap API</span>
-                </h4>
-                <ul>
-                  <li>
-                    A NodeJS and ExpressJS weather web application.
-                  </li>
-
-                  <li>
-                    It uses OpenWeatherMap API to fetch real-time current weather data.
-                  </li>
-
-                  <li>
-                    It displays details such as Temperature, Humidity, Wind Speed and Sunrise time.
-                  </li>
-                </ul>
-                <div class="workLinks">
-                  <a href="https://weather-data.onrender.com/" class="liveLink" target="_blank"
-                    rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/jayantsingh-22/weather-app" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/reguard.png" alt="ReGuard" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>ReGuard</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">HTML5</span>,
-                  <span class="techStack">CSS3</span>,
-                  <span class="techStack">ES6</span>,
-                  <span class="techStack">Vanta.js</span>
-                </h4>
-                <ul>
-                  <li>
-                    Responsive landing page of a dummy digital security firm
-                    named <span id="company">ReGuard</span>.
-                  </li>
-
-                  <li>Completely built responsive with only pure CSS.</li>
-
-                  <li>
-                    Used Vanta.js to give animation effect to the header
-                    section.
-                  </li>
-                </ul>
-                <div class="workLinks">
-                  <a href="http://re-guard-rho.vercel.app/" class="liveLink" target="_blank"
-                    rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/jayantsingh-22/ReGuard" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/spotify.png" alt="Spotify" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>Spotify Replica</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">HTML5</span>,
-                  <span class="techStack">CSS3</span>,
-                  <span class="techStack">ES6</span>,
-                  <span class="techStack">Bootstrap5</span>
-                </h4>
-                <ul>
-                  <li>
-                    A responsive replica of Spotify Web Player landing page.
-                  </li>
-
-                  <li>
-                    Used Bootstrap to add responsiveness to the website.
-                  </li>
-                </ul>
-                <div class="workLinks">
-                  <a href="https://jayantsingh-22.github.io/spotify-replica/" class="liveLink" target="_blank"
-                    rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/jayantsingh-22/spotify-replica" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="workBox">
-              <div class="workImageContainer">
-                <img src="./images/codepedia.png" alt="CodePedia" />
-              </div>
-              <div class="workDescribeContainer">
-                <h3>CodePedia</h3>
-                <h4>
-                  Technologies Used: <span class="techStack">HTML5</span>,
-                  <span class="techStack">CSS3</span>,
-                  <span class="techStack">Bootstrap5</span>
-                </h4>
-                <ul>
-                  <li>
-                    A landing page of a dummy online code learning platform
-                    named <span id="company">CodePedia</span>.
-                  </li>
-
-                  <li>Added responsive behaviour by using Bootstrap5.</li>
-                </ul>
-                <div class="workLinks">
-                  <a href="https://jayantsingh-22.github.io/Codepedia/" class="liveLink" target="_blank">Live</a>
-                  <a href="https://github.com/jayantsingh-22/Codepedia" class="repoLink" target="_blank"
-                    rel="noopener noreferrer">Repo</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contactSection" id="contact">
-          <div class="sectionHead">
-            <span>SAY HELLO</span>
-            <h2>CONTACT</h2>
-          </div>
-
-          <div class="contactContainer sectionContainer">
-            <h3>Get in Touch</h3>
-            <div class="contactTypes">
-              <div class="flexContainer">
-                <div class="typeBox">
-                  <i class="lni lni-envelope"></i>
-                  <a href="mailto:jayantsingh640@gmail.com">jayantsingh640@gmail.com</a>
-                  <p>Email Me</p>
-                </div>
-              </div>
-
-              <div class="flexContainer">
-                <div class="typeBox">
-                  <i class="lni lni-twitter"></i>
-                  <a href="https://twitter.com/_jayant_singh" target="_blank" rel="noopener noreferrer">Twitter</a>
-                  <p>Message me directly!</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="contactFormContainer">
-              <h3>Contact Form</h3>
-
-              <form id="contactForm" action="https://formspree.io/f/xzbqbdna" method="POST">
-                <label for="nameInput" class="srOnly"></label>
-                <input type="text" id="nameInput" name="nameInput" class="nameInput" required
-                  placeholder="Your Name*" />
-                <label for="emailInput" class="srOnly"></label>
-                <input type="email" id="emailInput" name="emailInput" class="emagilInput" required
-                  placeholder="Your Email*" />
-                <label for="subjectInput" class="srOnly"></label>
-                <input type="text" id="subjectInput" name="subjectInput" class="subjectInput" required
-                  placeholder="Subject*" />
-                <label for="messageInput" class="srOnly"></label>
-                <textarea class="messageInput" name="messageInput" id="messageInput" required
-                  placeholder="Your Message*"></textarea>
-              </form>
-
-              <button type="submit" class="formSend" target="_blank" form="contactForm" rel="noopener noreferrer">
-                POST
-              </button>
+            <div class="socialsResume">
+              <a
+                class="resumeLink"
+                href="https://drive.google.com/file/d/1Au1-FLyV-1RuXNQoF9YtJ7TqvtrkZly5/view?usp=drive_link"
+                alt="Jayant Singh's resumé"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resumé</a
+              >
+              <ul class="socialsList">
+                <li>
+                  <a
+                    class="linkedin"
+                    href="https://www.linkedin.com/in/jayant-singh-5425a3232/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="lni lni-linkedin-original"
+                      aria-label="Link to Jayant's LinkedIn page."
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="github"
+                    href="https://github.com/jayantsingh-22"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="lni lni-github-original"
+                      aria-label="Link to Jayant's GitHub page."
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="leetcode"
+                    href="https://leetcode.com/jayantsingh640/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><iconify-icon
+                      icon="simple-icons:leetcode"
+                      aria-label="Link to Jayant's Leetcode profile"
+                    ></iconify-icon>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-      </main>
-      <!-- End of Main -->
+        </header>
+        <!-- Beginning of Main -->
+        <main>
+          <!-- About Section -->
+          <section class="aboutSection" id="about">
+            <div class="sectionHead">
+              <span>SOME INFO</span>
+              <h2>ABOUT ME</h2>
+            </div>
+
+            <article class="aboutContainer sectionContainer">
+              <p>
+                I am a sophomore year engineering student at
+                <span>IIIT Bhopal</span>. I love to delve into the world of web
+                development. I find it really fascinating to create and design
+                websites and I have taught myself a variety of programming
+                languages such as HTML, CSS, and JavaScript, relevant libraries
+                and frameworks through online courses and creating projects
+                whenever possible.
+              </p>
+            </article>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skillsSection" id="skills">
+            <div class="sectionHead">
+              <span>CHECK OUT MY</span>
+              <h2>SKILLS</h2>
+            </div>
+
+            <div class="skillsContainer sectionContainer">
+              <ul class="skillsGrid">
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/html5.svg" />
+                    <p>HTML</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/css3.svg" />
+                    <p>CSS</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/javascript.svg" />
+                    <p>Javascript</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/python.svg" />
+                    <p>Python</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/django.svg" />
+                    <p>Django</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/reactjs.svg" />
+                    <p>React</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/nodejs.svg" alt="NodeJS logo" />
+                    <p>NodeJS</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/sass.svg" />
+                    <p>SASS</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/jquery.svg" />
+                    <p>JQuery</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/bootstrap.svg" />
+                    <p>Bootstrap</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/tailwind.svg" />
+                    <p>Tailwind</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/sql.svg" />
+                    <p>SQL</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/mysql.svg" />
+                    <p>MySQL</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/mongodb.svg" />
+                    <p>MongoDB</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/cpp.svg" />
+                    <p>C++</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/github.svg" />
+                    <p>GitHub</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/docker.svg" />
+                    <p>Docker</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/nestjs.svg" />
+                    <p>NestJS</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/nextjs.svg" />
+                    <p>Next.js</p>
+                  </div>
+                </li>
+
+                <li class="skillsList">
+                  <div class="itemContainer">
+                    <img src="assets/skills/prisma.svg" />
+                    <p>Prisma</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Works Section -->
+          <section class="worksSection" id="works">
+            <div class="sectionHead">
+              <span>TAKE A LOOK AT MY</span>
+              <h2>PROJECTS</h2>
+            </div>
+
+            <div class="worksContainer sectionContainer">
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/chirper.png" alt="Chirper" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Chirper</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">Typescript</span>,
+                    <span class="techStack">React.js,  Next.js</span>,
+                    <span class="techStack">TailwindCSS</span>,
+                    <span class="techStack">Prisma,  MongoDB</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Chirper - A clone of the famous micro-blogging site: Twitter.
+                    </li>
+
+                    <li>
+                      Implemented Next.js for the front end, Prisma and MongoDB for the back end,and
+                    </li>
+
+                    <li>
+                      TypeScript for type safety, resulting in a robust and scalable web app.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://chirper-two.vercel.app/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/chirper"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/statistica.png" alt="Statisitca" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Statisitca</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">React.js</span>,
+                    <span class="techStack">SASS</span>,
+                    <span class="techStack">Bootstrap5</span>,
+                    <span class="techStack">D3.js</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      A web app that provides graphical data on several economic
+                      indicators of different countries.
+                    </li>
+
+                    <li>
+                      It uses data fetched by the World Bank API to plot in the
+                      graphical form.
+                    </li>
+
+                    <li>
+                      Used D3.js library to plot the graph and Bootstrap5 to add
+                      responsiveness.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://statistica.imjay.xyz/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/statistica"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/natours.png" alt="Natours image" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Natours</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">NodeJS</span>,
+                    <span class="techStack">ExpressJS</span>,
+                    <span class="techStack">MongoDB</span>,
+                    <span class="techStack">Mongoose</span>,
+                    <span class="techStack">Pug</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Natours is a dummy adventure travel web app, specializing
+                      in nature tours and experiences.
+                    </li>
+
+                    <li>
+                      Developed app with Pug and Mongoose integration, ensuring
+                      a good user experience and performance.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://natours.imjay.xyz/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/tours-project"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/weather.png" alt="In progress 🚧" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Weather App</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">NodeJS</span>,
+                    <span class="techStack">ExpressJS</span>,
+                    <span class="techStack">OpenWeatherMap API</span>
+                  </h4>
+                  <ul>
+                    <li>A NodeJS and ExpressJS weather web application.</li>
+
+                    <li>
+                      It uses OpenWeatherMap API to fetch real-time current
+                      weather data.
+                    </li>
+
+                    <li>
+                      It displays details such as Temperature, Humidity, Wind
+                      Speed and Sunrise time.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://weather-data.onrender.com/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/weather-app"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/reguard.png" alt="ReGuard" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>ReGuard</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">HTML5</span>,
+                    <span class="techStack">CSS3</span>,
+                    <span class="techStack">ES6</span>,
+                    <span class="techStack">Vanta.js</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Responsive landing page of a dummy digital security firm
+                      named <span id="company">ReGuard</span>.
+                    </li>
+
+                    <li>Completely built responsive with only pure CSS.</li>
+
+                    <li>
+                      Used Vanta.js to give animation effect to the header
+                      section.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="http://re-guard-rho.vercel.app/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/ReGuard"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/spotify.png" alt="Spotify" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Spotify Replica</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">HTML5</span>,
+                    <span class="techStack">CSS3</span>,
+                    <span class="techStack">ES6</span>,
+                    <span class="techStack">Bootstrap5</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      A responsive replica of Spotify Web Player landing page.
+                    </li>
+
+                    <li>
+                      Used Bootstrap to add responsiveness to the website.
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://jayantsingh-22.github.io/spotify-replica/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/spotify-replica"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="./images/codepedia.png" alt="CodePedia" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>CodePedia</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">HTML5</span>,
+                    <span class="techStack">CSS3</span>,
+                    <span class="techStack">Bootstrap5</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      A landing page of a dummy online code learning platform
+                      named <span id="company">CodePedia</span>.
+                    </li>
+
+                    <li>Added responsive behaviour by using Bootstrap5.</li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://jayantsingh-22.github.io/Codepedia/"
+                      class="liveLink"
+                      target="_blank"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/jayantsingh-22/Codepedia"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="contactSection" id="contact">
+            <div class="sectionHead">
+              <span>SAY HELLO</span>
+              <h2>CONTACT</h2>
+            </div>
+
+            <div class="contactContainer sectionContainer">
+              <h3>Get in Touch</h3>
+              <div class="contactTypes">
+                <div class="flexContainer">
+                  <div class="typeBox">
+                    <i class="lni lni-twitter"></i>
+                    <a
+                      href="https://twitter.com/_jayant_singh"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Twitter</a
+                    >
+                    <p>Message me directly!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contactFormContainer">
+                <h3>Contact Form</h3>
+
+                <form
+                  id="contactForm"
+                  action="https://formspree.io/f/xzbqbdna"
+                  method="POST"
+                >
+                  <label for="nameInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="nameInput"
+                    name="nameInput"
+                    class="nameInput"
+                    required
+                    placeholder="Your Name*"
+                  />
+                  <label for="emailInput" class="srOnly"></label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    name="emailInput"
+                    class="emagilInput"
+                    required
+                    placeholder="Your Email*"
+                  />
+                  <label for="subjectInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="subjectInput"
+                    name="subjectInput"
+                    class="subjectInput"
+                    required
+                    placeholder="Subject*"
+                  />
+                  <label for="messageInput" class="srOnly"></label>
+                  <textarea
+                    class="messageInput"
+                    name="messageInput"
+                    id="messageInput"
+                    required
+                    placeholder="Your Message*"
+                  ></textarea>
+                </form>
+
+                <button
+                  type="submit"
+                  class="formSend"
+                  target="_blank"
+                  form="contactForm"
+                  rel="noopener noreferrer"
+                >
+                  POST
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- End of Main -->
+      </div>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; Jayant Singh 2023</p>
+        <br />
+        <p id="location"><i class="lni lni-map-marker"></i> India</p>
+      </footer>
+      <!-- Icons provided by https://lineicons.com/ -->
     </div>
-    <!-- Footer -->
-    <footer>
-      <p>&copy; Jayant Singh 2023</p>
-      <br />
-      <p id="location"><i class="lni lni-map-marker"></i> India</p>
-    </footer>
-    <!-- Icons provided by https://lineicons.com/ -->
-  </div>
-  <!-- End of the wrapper -->
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="scripts/index.js"></script>
-</body>
-
+    <!-- End of the wrapper -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 </html>

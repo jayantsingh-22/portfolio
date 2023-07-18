@@ -975,6 +975,7 @@ header .heroDescription .socialsResume .resumeLink:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .contactTypes .flexContainer {
@@ -1011,29 +1012,18 @@ header .heroDescription .socialsResume .resumeLink:focus {
   margin-bottom: 25px;
 }
 
-.contactTypes .flexContainer .typeBox .lni-envelope {
+.contactTypes .flexContainer .typeBox .lni-twitter {
   color: #1267d0;
   background-color: #bcd0ed;
-}
-
-.contactTypes .flexContainer .typeBox .lni-twitter {
-  color: #095e17;
-  background-color: #9fe3ad;
 }
 
 .contactTypes .flexContainer .typeBox .lni-twitter:hover {
   transform: translate(0px,3px);
   transition: all 0.3s ease-in;
-  background-color: #5ac870;
-  animation: bounce 1s ease-in both;
-}
-
-.contactTypes .flexContainer .typeBox .lni-envelope:hover {
-  transform: translate(0px,3px);
-  transition: all 0.3s ease-in;
   background-color: #97baeb;
   animation: bounce 1s ease-in both;
 }
+
 
 .contactTypes .flexContainer .typeBox a {
   display: block;
